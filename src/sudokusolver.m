@@ -26,8 +26,8 @@ for iRow = 1:size(sudokuBoard, 1)
 end
 
 % Store the solution into a cell
-global solution
-solution{end+1} = sudokuBoard;
+global solutions
+solutions{end+1} = sudokuBoard;
 
 end
 

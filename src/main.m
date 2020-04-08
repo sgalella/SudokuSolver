@@ -35,13 +35,13 @@ sudokuBoard = [5 3 0 0 7 0 0 0 0;
 printboard(sudokuBoard)
 
 % Initialize cell to store solutions
-global solution
-solution = {};
+global solutions
+solutions = {};
 
 % Solve board
 sudokusolver(sudokuBoard);
 
 % Print solutions
-for iSolution = 1:length(solution)
-     printboard(solution{iSolution}, "Solution " + num2str(iSolution));
+for iSolution = 1:length(solutions)
+     printboard(solutions{iSolution}, "Solution " + num2str(iSolution));
 end
